@@ -1,0 +1,67 @@
+html {
+    background-color: #e0e0e0;
+    font-family: "Georgia";
+}
+
+
+div.topMenu {
+  display: inline-block;
+  height: 52px;
+  width: 100%;
+  background-color:#2D2928;
+  
+}
+
+ nav.topMenu {
+  position: relative;
+ }
+   
+  nav.topMenu li {
+    display:inline;
+  }
+  a.line {
+    border-left: 1px solid #c4c4c4;
+    padding-left: 4px;
+  }
+  a.topMenu:link, a.topMenu:visited {
+    font-size: 12px;
+    line-height: 14px; 
+    color: #c4c4c4;
+    text-decoration: none;
+  }
+  a.topMenu:hover,a.topMenu:active  {
+    text-decoration: underline;
+  }
+  li.icons{
+    float: right;
+    
+  }
+  li.lastRight{
+    margin-right: 23px;
+  }
+  ul.icons li{
+    display: inline;
+  }
+a.ellipse{
+  border:8px solid #ffffff;
+  width: 32px;
+  height: 32px;
+  border-radius: 20px;
+  background-color: #ffffff;
+  margin-left: 8px;
+  color: #ffffff ;
+  text-decoration: none;
+}
+ 
+  h1.logo {
+    font-size: 100px;
+    line-height: 120px;
+    color: #282828;
+    text-align: center;
+  }
+  h2.motto {
+    font-size: 20px;
+    line-height: 24px;
+    color: #4a4a4a;
+    text-align: center;
+  }
