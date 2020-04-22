@@ -4,7 +4,7 @@ html {
 }
 
 
-div.topMenu {
+nav.topMenu {
   display: inline-block;
   height: 52px;
   width: 100%;
@@ -14,34 +14,38 @@ div.topMenu {
 
  nav.topMenu {
   position: relative;
- }
-   
-  nav.topMenu li {
-    display:inline;
+}
+
+ nav.topMenu li {
+    display:inline-block;
+    
   }
+
   a.line {
     border-left: 1px solid #c4c4c4;
     padding-left: 4px;
   }
+
   a.topMenu:link, a.topMenu:visited {
     font-size: 12px;
     line-height: 14px; 
     color: #c4c4c4;
     text-decoration: none;
   }
+
   a.topMenu:hover,a.topMenu:active  {
     text-decoration: underline;
   }
+
   li.icons{
     float: right;
     
   }
+  
   li.lastRight{
     margin-right: 23px;
   }
-  ul.icons li{
-    display: inline;
-  }
+
 a.ellipse{
   border:8px solid #ffffff;
   width: 32px;
@@ -59,9 +63,45 @@ a.ellipse{
     color: #282828;
     text-align: center;
   }
+  
   h2.motto {
     font-size: 20px;
     line-height: 24px;
     color: #4a4a4a;
     text-align: center;
   }
+ 
+
+  div.topNavigation {
+   height: 35px;
+   width: 100%;
+   border-top:3px double #999999 ;
+   border-bottom:3px double #999999 ;
+ }
+ 
+ div.topNavigation {
+  position: static;
+  display: flex;
+  align-items: center;
+ }
+ 
+ div.topNavigation  li{
+  display:inline-block;
+ }
+ 
+ div.topNavigation ul{
+   padding-left: 0px;
+ }
+ 
+ a.topNavigation:link, a.topNavigation:visited {
+  font-size: 14px;
+  line-height: 14px;
+  color: #333333;
+  text-decoration: none;
+  padding-left: 36px;
+
+ }
+ 
+ a.topNavigation:hover,a.topNavigation:active  {
+  color: #999999;
+}
