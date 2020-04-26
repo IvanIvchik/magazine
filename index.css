@@ -2,13 +2,15 @@ html {
     background-color: #4b4a4a;
     font-family: "Georgia";
 }
+body {
+  background-color: #e0e0e0;
+  width: 1000px; 
+  margin: auto;
+}
 
 header {
-  background-color: #e0e0e0;
-  background-attachment: fixed;
-  width: 1000px;
+  margin-top: 0px;
   height: 280px;
-  margin: auto;
 }
 
 nav.topMenu {
@@ -60,7 +62,7 @@ a.ellipse{
   color: #ffffff ;
   text-decoration: none;
 }
-div.logo {
+nav.logo {
   height: 185px;
 }
  
@@ -74,8 +76,8 @@ div.logo {
   }
   
   p.motto {
-    margin-top: 0px;
-    margin-bottom: 0px;
+    margin-top: 15px;
+    margin-bottom: 25px;
     font-size: 20px;
     line-height: 24px;
     color: #4a4a4a;
@@ -84,26 +86,24 @@ div.logo {
   }
  
 
-  div.topNavigation {
-    margin-top: 0px;
-    margin-bottom: 0px;
+  nav.topNavigation {
    height: 35px;
    width: 100%;
    border-top:3px double #999999 ;
    border-bottom:3px double #999999 ;
  }
  
- div.topNavigation {
+ nav.topNavigation {
   position: static;
   display: flex;
   align-items: center;
  }
  
- div.topNavigation  li{
+ nav.topNavigation  li{
   display:inline-block;
  }
  
- div.topNavigation ul{
+ nav.topNavigation ul{
    padding-left: 0px;
    margin-top: 0px;
    margin-bottom: 0px;
@@ -120,4 +120,48 @@ div.logo {
  
  a.topNavigation:hover,a.topNavigation:active  {
   color: #999999;
+}
+
+main{
+  height: 1270px;
+}
+
+article.mainArticles {
+  border-bottom: 3px double #999999;
+}
+
+section.topArticles {
+  margin-top: 30px;
+  height: 495px;
+  width: 495px;
+  margin-left: 5px;
+}
+div.imgTopArticles {
+  height:320px; 
+  width: 495px;
+  background-color:#333333 ;
+  margin-bottom: 20px;
+}
+ p.imgTopArticles{
+  font-size: 36px;
+  line-height: 36px;
+  color: #ffffff;
+  padding: 145px;
+}
+a.topNews  {
+  font-size: 22px;
+  line-height: 22px;
+  color: #444444;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  text-decoration: none;
+
+}
+p.topNews  {
+  width: 497px;
+  height: 99px;
+  font-size: 16px;
+  line-height: 19px;
+  color: #666666;
+  margin-top: 10px;
 }
