@@ -1,22 +1,26 @@
 html {
-    background-color: #e0e0e0;
+    background-color: #4b4a4a;
     font-family: "Georgia";
 }
 
+header {
+  background-color: #e0e0e0;
+  background-attachment: fixed;
+  width: 1000px;
+  height: 280px;
+  margin: auto;
+}
 
 nav.topMenu {
+  margin-top: 0px;
   display: inline-block;
   height: 52px;
   width: 100%;
   background-color:#2D2928;
-  
-}
-
- nav.topMenu {
   position: relative;
 }
 
- nav.topMenu li {
+nav.topMenu li {
     display:inline-block;
     
   }
@@ -56,23 +60,33 @@ a.ellipse{
   color: #ffffff ;
   text-decoration: none;
 }
+div.logo {
+  height: 185px;
+}
  
   h1.logo {
+    margin-top: 0px;
+    margin-bottom: 0px;
     font-size: 100px;
     line-height: 120px;
     color: #282828;
     text-align: center;
   }
   
-  h2.motto {
+  p.motto {
+    margin-top: 0px;
+    margin-bottom: 0px;
     font-size: 20px;
     line-height: 24px;
     color: #4a4a4a;
     text-align: center;
+    
   }
  
 
   div.topNavigation {
+    margin-top: 0px;
+    margin-bottom: 0px;
    height: 35px;
    width: 100%;
    border-top:3px double #999999 ;
@@ -91,6 +105,8 @@ a.ellipse{
  
  div.topNavigation ul{
    padding-left: 0px;
+   margin-top: 0px;
+   margin-bottom: 0px;
  }
  
  a.topNavigation:link, a.topNavigation:visited {
