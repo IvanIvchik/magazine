@@ -17,9 +17,9 @@ nav.topMenu {
   margin-top: 0px;
   display: inline-block;
   height: 52px;
-  width: 100%;
+  width: 1000px;
   background-color:#2D2928;
-  position: relative;
+  position: fixed;
 }
 
 nav.topMenu li {
@@ -62,8 +62,9 @@ a.ellipse{
   color: #ffffff ;
   text-decoration: none;
 }
-nav.logo {
+div.logo {
   height: 185px;
+  padding-top: 60px;
 }
  
   h1.logo {
