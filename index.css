@@ -88,25 +88,21 @@ nav.logo {
 
   nav.topNavigation {
    height: 35px;
-   width: 100%;
+   width: 960px;
+   margin: auto;
    border-top:3px double #999999 ;
    border-bottom:3px double #999999 ;
  }
  
- nav.topNavigation {
-  position: static;
-  display: flex;
-  align-items: center;
- }
+ 
  
  nav.topNavigation  li{
-  display:inline-block;
+  display:inline;
  }
  
  nav.topNavigation ul{
-   padding-left: 0px;
-   margin-top: 0px;
-   margin-bottom: 0px;
+  margin-top: 10px;
+  padding-left: 0px;
  }
  
  a.topNavigation:link, a.topNavigation:visited {
@@ -114,12 +110,14 @@ nav.logo {
   line-height: 14px;
   color: #333333;
   text-decoration: none;
-  padding-left: 36px;
-
  }
  
  a.topNavigation:hover,a.topNavigation:active  {
   color: #999999;
+}
+
+a.Right {
+  padding-left: 35px;
 }
 
 main{
@@ -178,7 +176,7 @@ div.imgMainArticles {
   width: 95px;
   background-color:#333333 ;
   float: left;
-  border: 3px double #e0e0e0;
+  border: 5px double #e0e0e0;
   margin-right: 10px;
 }
 
