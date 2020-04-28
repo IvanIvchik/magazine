@@ -167,7 +167,9 @@ a.topNews  {
   margin-top: 20px;
   margin-bottom: 0px;
   text-decoration: none;
-
+}
+a.topNews:hover{
+  color:#999999;
 }
 p.topNews  {
   width: 497px;
@@ -206,7 +208,9 @@ a.mainNewsNoImg {
   color: #444444;
   text-decoration: none;
 }
-
+a.mainNewsNoImg:hover{
+  color:#999999;
+}
 p.mainNewsNoImg {
   height: 73px;
   font-size: 16px;
@@ -221,7 +225,9 @@ a.mainNews {
   color: #444444;
   text-decoration: none;
 }
-
+a.mainNews:hover{
+  color:#999999;
+}
 p.mainNews {
   height: 66px;
   font-size: 16px;
@@ -234,18 +240,20 @@ article.content {
   height: 700px;
   display: flex;
   border-bottom: 3px double  #999999;
+  margin: 0px 20px;
 }
 
 article.column{
   height: 355px;
   width: 600px;
-  margin: 0px 20px;
+  margin: 0px;
   display: flex;
   border-bottom: 3px double #999999;
 }
-section.leftColumn{
-  margin-right: 20px;
+section.rightColumn {
+  margin-left: 20px;
 }
+
 section.mainColumn {
   height: 90px;
   width: 290px; 
@@ -319,13 +327,11 @@ a.readMore:hover, a.readMore:active {
 article.tabs {
   height: 355px;
   width: 600px;
-  margin-left: 20px;
 }
 nav.tabs {
   width: 600px;
   height: 35px;
   background-color: #2D2928;
-  
   margin-top: 30px;
 }
 nav.tabs ul{
@@ -337,7 +343,7 @@ nav.tabs li {
   font-size: 12px;
   line-height: 14px;
   font-weight: bold;
-  padding-left: 10px;
+  padding-left: 15px;
   padding-right: 10px;
 
 } 
@@ -407,7 +413,7 @@ p.tabs, p.tagName {
 article.asideContent {
   height: 640px;
   width: 330px;
-  margin-left: 10px;
+  margin-left: 30px;
  display: flex;
 }
 section.advertisement {
@@ -467,7 +473,74 @@ section.linkColumn a:link, section.linkColumn a:visited {
   text-decoration: none;
 }
 section.linkColumn a:hover, section.linkColumn a:active {
+  color: #3a3635;
   text-decoration: underline;
 }
 
 
+
+article.lowerColumn {
+  display:flex;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-bottom: 3px double #999999;
+}
+section.lowerColumn{
+  height: 175px;
+  width: 180px;
+  
+}
+section.leftFooter {
+  margin-right: 20px;
+}
+section.lowerColumn h2 {
+  font-size: 13px;
+  line-height: 13px;
+  color: #666666;
+  border-bottom: 1px solid #bcbcbc;
+}
+section.lowerColumn ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+section.lowerColumn a{
+  font-size: 12px;
+  line-height: 19px;
+  color: #982216;
+  font-family: "Verdana";
+  text-decoration: none;
+}
+section.lowerColumn a:hover, section.lowerColumn a:active{
+  color: #3a3635;
+  text-decoration: underline;
+}
+div.copiright {
+  width: 960px;
+  height: 60px;
+  margin: 0px 20px;
+  position: relative;
+  z-index: 0;
+}
+div.copiright p {
+  font-size: 12px;
+ line-height: 12px;
+ color: #787878;
+}
+
+div.domainName {
+  position: absolute;
+  width: 315px;
+  height: 10px;
+  left: 0px;
+  top: 15px;
+}
+
+div.templaneName {
+  position: absolute;
+  width: 155px;
+  height: 10px;
+  right: 0px;
+  left: 820px;
+  top: 15px;
+}
