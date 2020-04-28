@@ -4,7 +4,6 @@ html {
 }
 
 
-
 body {
   background-color: #e0e0e0;
   width: 1000px; 
@@ -12,55 +11,47 @@ body {
 }
 
 
-
-
 header {
   margin-top: 0px;
   height: 280px;
 }
-
+/* Свойства верхнего подвижного меню */
 nav.topMenu {
   margin-top: 0px;
-  display: inline-block;
   height: 52px;
   width: 1000px;
   background-color:#2D2928;
-  position: fixed;
-  z-index: 1;
+  position: fixed;/* Задаётся подвижность*/
+  z-index: 1;/* Индекс для отображения над другими позиционированными элементами*/
 }
 nav.topMenu ul {
   padding-left: 20px;
 }
 nav.topMenu li {
     display:inline-block;
-    
   }
-
+/* Созздание в верхней левом углу меню разделительной линии */
   a.line {
     border-left: 1px solid #c4c4c4;
     padding-left: 4px;
   }
-
   a.topMenu:link, a.topMenu:visited {
     font-size: 12px;
     line-height: 14px; 
     color: #c4c4c4;
     text-decoration: none;
   }
-
   a.topMenu:hover,a.topMenu:active  {
     text-decoration: underline;
   }
 
+/* Свойства иконок в верхнем правом углу иконок  */
   li.icons{
     float: right;
-    
   }
-
   li.lastRight{
     margin-right: 23px;
   }
-
 a.ellipse{
   border:8px solid #ffffff;
   width: 32px;
@@ -72,11 +63,11 @@ a.ellipse{
   text-decoration: none;
 }
 
+/* Свойства логотипа */
 div.logo {
   height: 185px;
   padding-top: 60px;
 }
- 
   h1.logo {
     margin-top: 0px;
     margin-bottom: 0px;
@@ -84,8 +75,7 @@ div.logo {
     line-height: 120px;
     color: #282828;
     text-align: center;
-  }
-  
+  } 
   p.motto {
     margin-top: 15px;
     margin-bottom: 25px;
@@ -93,10 +83,9 @@ div.logo {
     line-height: 24px;
     color: #4a4a4a;
     text-align: center;
-    
   }
  
-
+/* Свойства ТопМеню */
 nav.topNavigation {
    height: 35px;
    width: 960px;
@@ -104,35 +93,33 @@ nav.topNavigation {
    border-top:3px double #999999 ;
    border-bottom:3px double #999999 ;
 }
-
  nav.topNavigation  li{
   display:inline;
  }
- 
  nav.topNavigation ul{
   margin-top: 10px;
   padding-left: 0px;
  }
- 
  a.topNavigation:link, a.topNavigation:visited {
   font-size: 14px;
   line-height: 14px;
   color: #333333;
   text-decoration: none;
  }
- 
  a.topNavigation:hover,a.topNavigation:active  {
   color: #999999;
 }
- 
 a.Right {
   padding-left: 35px;
 }
 
+
+/* Раздел Main */
 main{
   height: 1270px;
 }
 
+/* Верхняя часть майн и её размещение */
 article.mainArticles {
   height: 540px;
   border-bottom: 3px double #999999;
@@ -140,26 +127,24 @@ article.mainArticles {
   display: flex;
 }
 
+/* сойства ТопНовости */
 section.topArticles {
   margin-top: 0px;
   height: 495px;
   width: 495px;
 }
-
 div.imgTopArticles {
   height:320px; 
   width: 495px;
   background-color:#333333 ;
   margin-bottom: 20px;
 }
-
  p.imgTopArticles{
   font-size: 36px;
   line-height: 36px;
   color: #ffffff;
   padding: 145px;
 }
-
 a.topNews  {
   font-size: 22px;
   line-height: 22px;
@@ -180,6 +165,8 @@ p.topNews  {
   margin-top: 10px;
   text-align: justify;
 }
+
+/* Свойства колонок справа от ТопНовости */
 article.burgerMainArticles {
   height: 470px;
   width: 430px;
@@ -190,18 +177,17 @@ div.imgMainArticles {
   height:95px; 
   width: 95px;
   background-color:#333333 ;
-  float: left;
+  float: left;/* Размещение изображения слева от текста*/
   border: 5px double #e0e0e0;
   margin-right: 10px;
 }
-
 div.imgMainArticles p {
   font-size: 15px;
   line-height: 15px;
   color: #ffffff;
   padding: 22px 5px;
 }
-
+/* свойства статьи без изображения */
 a.mainNewsNoImg {
   font-size: 22px;
   line-height: 22px;
@@ -218,7 +204,7 @@ p.mainNewsNoImg {
   color: #666666;
   text-align: justify;
 }
-
+/* Свойства статей с изображением */
 a.mainNews {
   font-size: 22px;
   line-height: 22px;
@@ -236,6 +222,8 @@ p.mainNews {
   text-align: justify;
 }
 
+
+/* Свойства основного контента */
 article.content {
   height: 700px;
   display: flex;
@@ -243,6 +231,7 @@ article.content {
   margin: 0px 20px;
 }
 
+/* Свойства верхней праой половины контента */
 article.column{
   height: 355px;
   width: 600px;
@@ -253,13 +242,12 @@ article.column{
 section.rightColumn {
   margin-left: 20px;
 }
-
 section.mainColumn {
   height: 90px;
   width: 290px; 
   margin-top: 0px;
-  position: relative;
-  z-index: 0;
+  position: relative;/* позиционирование блока для правильного размещения ссылки RED MORE*/
+  z-index: 0;/* Индекс задан для того что бы плавающее меню перекрывало блоки*/
 }
 article.mainContent h4 {
   font-size: 16px;
@@ -285,7 +273,6 @@ div.imgColum p {
   margin: auto;
   padding-top: 8px;
 }
-
   h3.mainColumn {
   font-size: 12px;
   line-height: 12px;
@@ -293,7 +280,6 @@ div.imgColum p {
   margin-bottom: 0px;
   margin-top: 0px;
   padding-left: 80px;
- 
 }
  p.mainColumn {
   width: 210px;
@@ -306,7 +292,7 @@ div.imgColum p {
   text-align: justify;
 }
 div.readMore {
-  position: absolute;
+  position: absolute;/* позиционирование блока для правильного размещения ссылки RED MORE*/
   top: 55px;
   right: 0px;
   width: 85px;
@@ -317,17 +303,20 @@ a.readMore{
   line-height: 11px;
   text-decoration: none;
 }
-
 a.readMore:link, a.readMore:visited {
   color: #982115;
 }
 a.readMore:hover, a.readMore:active {
   color:  #3b2320;
 }
+
+/* Свойства правой нижней половины контента */
 article.tabs {
   height: 355px;
   width: 600px;
 }
+
+/* Свойства менюшки */
 nav.tabs {
   width: 600px;
   height: 35px;
@@ -337,7 +326,6 @@ nav.tabs {
 nav.tabs ul{
   padding-left: 0px;
 }
-
 nav.tabs li {
   display:inline-block;
   font-size: 12px;
@@ -345,7 +333,6 @@ nav.tabs li {
   font-weight: bold;
   padding-left: 15px;
   padding-right: 10px;
-
 } 
 li.rightBattom { 
   border-left: 1px solid  #e0e0e0;
@@ -359,6 +346,7 @@ nav.tabs a:hover, nav.tabs a:active{
   color: #c0c0c0;
 }
 
+/* Свойства колонок */
 section.tabs {
   width: 130px;
   height: 235px;
@@ -386,7 +374,6 @@ p.tagName a:hover, p.tagName a:active{
   color:  #250401;
   text-decoration: underline;
 }
-
 div.imgTabs {
   height: 83px;
   width: 125px;
@@ -410,12 +397,16 @@ p.tabs, p.tagName {
   text-align: justify;
 }
 
+
+/* Свойства правой половины контента */
 article.asideContent {
   height: 640px;
   width: 330px;
   margin-left: 30px;
  display: flex;
 }
+
+/* Свойства блока места под рекламу */
 section.advertisement {
   height: 320px;
   width: 160px;
@@ -444,6 +435,7 @@ div.advertisement p{
   padding-top: 284px;
 }
 
+/* Свойства колонок с ссылками */
 section.linkColumn {
   height: 640px;
   width: 160px;
@@ -451,11 +443,9 @@ section.linkColumn {
 section.linkColumn div {
   margin-bottom: 5px;
 }
-
 div.categories {
   margin-top: 33px;
 }
-
 section.linkColumn h3 {
   font-size: 13px;
   line-height: 13px;
@@ -479,6 +469,7 @@ section.linkColumn a:hover, section.linkColumn a:active {
 
 
 
+/* Свойства футера */
 article.lowerColumn {
   display:flex;
   margin-left: 20px;
@@ -488,7 +479,7 @@ article.lowerColumn {
 section.lowerColumn{
   height: 175px;
   width: 180px;
-  
+  margin-bottom: 20px;
 }
 section.leftFooter {
   margin-right: 20px;
@@ -497,6 +488,7 @@ section.lowerColumn h2 {
   font-size: 13px;
   line-height: 13px;
   color: #666666;
+  padding-bottom: 10px;
   border-bottom: 1px solid #bcbcbc;
 }
 section.lowerColumn ul {
@@ -515,6 +507,9 @@ section.lowerColumn a:hover, section.lowerColumn a:active{
   color: #3a3635;
   text-decoration: underline;
 }
+
+
+/* свойства копирайта */
 div.copiright {
   width: 960px;
   height: 60px;
@@ -527,7 +522,6 @@ div.copiright p {
  line-height: 12px;
  color: #787878;
 }
-
 div.domainName {
   position: absolute;
   width: 315px;
@@ -535,7 +529,6 @@ div.domainName {
   left: 0px;
   top: 15px;
 }
-
 div.templaneName {
   position: absolute;
   width: 155px;
