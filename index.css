@@ -1,84 +1,88 @@
-html {
-    background-color: #4b4a4a;
-    font-family: "Georgia";
+/* Сброс Стилей */
+body,h1,h2,h3,h4,p,ul,li,div {
+  margin: 0;
 }
-
+ul {
+  padding: 0;
+  list-style: none;
+}
+li:not([class="list"]) {
+  display: inline;
+}
+a {
+  text-decoration: none;
+}
+html {
+  background-color: #343434;
+  font-family: "Georgia";
+}
 
 body {
   background-color: #e0e0e0;
   width: 1000px; 
   margin: auto;
 }
-
-
+header,main,footer,nav.topMenu {
+  padding: 0 20px;
+}
 header {
-  margin-top: 0px;
   height: 280px;
 }
 /* Свойства верхнего подвижного меню */
 nav.topMenu {
-  margin-top: 0px;
   height: 52px;
-  width: 1000px;
+  width: 960px;
   background-color:#2D2928;
   position: fixed;/* Задаётся подвижность*/
   z-index: 1;/* Индекс для отображения над другими позиционированными элементами*/
 }
-nav.topMenu ul {
-  padding-left: 20px;
+nav.topMenu ul{
+  padding-top: 15px;
 }
-nav.topMenu li {
-    display:inline-block;
-  }
+
 /* Созздание в верхней левом углу меню разделительной линии */
   a.line {
     border-left: 1px solid #c4c4c4;
-    padding-left: 4px;
+    padding-left: 5px;
   }
-  a.topMenu:link, a.topMenu:visited {
+  a.buttonTopMenu:link,a.buttonTopMenu:visited {
     font-size: 12px;
     line-height: 14px; 
     color: #c4c4c4;
-    text-decoration: none;
+    padding-right: 2px;
   }
-  a.topMenu:hover,a.topMenu:active  {
+  a.buttonTopMenu:hover,a.buttonTopMenu:active  {
     text-decoration: underline;
   }
 
 /* Свойства иконок в верхнем правом углу иконок  */
-  li.icons{
+  li.icon{
     float: right;
-  }
-  li.lastRight{
-    margin-right: 23px;
   }
 a.ellipse{
   border:8px solid #ffffff;
-  width: 38px;
+  width: 32px;
   height: 32px;
-  border-radius: 32px;
+  border-radius: 100%;
   background-color: #ffffff;
   margin-left: 8px;
   color: #ffffff ;
-  text-decoration: none;
 }
 
 /* Свойства логотипа */
 div.logo {
   height: 185px;
-  padding-top: 60px;
+  padding-top: 52px;
 }
-  h1.logo {
-    margin-top: 0px;
-    margin-bottom: 0px;
-    font-size: 100px;
-    line-height: 120px;
-    color: #282828;
-    text-align: center;
+  div.logo h1 {
+  font-size: 100px;
+  line-height: 120px;
+  color: #282828;
+  text-align: center;
+  font-weight: normal;
+  padding: 10px 0;
   } 
-  p.motto {
-    margin-top: 15px;
-    margin-bottom: 25px;
+  div.logo p {
     font-size: 20px;
     line-height: 24px;
     color: #4a4a4a;
@@ -89,57 +93,50 @@ div.logo {
 nav.topNavigation {
    height: 35px;
    width: 960px;
-   margin: auto;
    border-top:3px double #999999 ;
    border-bottom:3px double #999999 ;
 }
- nav.topNavigation  li{
-  display:inline;
- }
  nav.topNavigation ul{
-  margin-top: 10px;
-  padding-left: 0px;
+  padding-top: 8px;
  }
- a.topNavigation:link, a.topNavigation:visited {
+ nav.topNavigation li{
+   padding-right: 36px;
+ }
+ nav.topNavigation a:link,nav.topNavigation a:visited {
   font-size: 14px;
   line-height: 14px;
   color: #333333;
   text-decoration: none;
  }
- a.topNavigation:hover,a.topNavigation:active  {
+ nav.topNavigation a:hover,nav.topNavigation a:active  {
   color: #999999;
 }
-a.Right {
-  padding-left: 35px;
-}
-
-
+ 
 /* Раздел Main */
 main{
-  height: 1270px;
+  height: 1275px;
+  padding-top: 35px;
+  padding-bottom: 35px;
 }
-
 /* Верхняя часть майн и её размещение */
 article.mainArticles {
   height: 540px;
   border-bottom: 3px double #999999;
-  margin: 0px 20px;
   display: flex;
 }
 
 /* сойства ТопНовости */
 section.topArticles {
-  margin-top: 0px;
-  height: 495px;
-  width: 495px;
+  height: 500px;
+  width: 500px;
 }
 div.imgTopArticles {
   height:320px; 
-  width: 495px;
-  background-color:#333333 ;
-  margin-bottom: 20px;
+  width: 500px;
+  background-color:#333333;
+  margin-bottom: 17px;
 }
- p.imgTopArticles{
+div.imgTopArticles p {
   font-size: 36px;
   line-height: 36px;
   color: #ffffff;
@@ -149,49 +146,48 @@ a.topNews  {
   font-size: 22px;
   line-height: 22px;
   color: #444444;
-  margin-top: 20px;
-  margin-bottom: 0px;
-  text-decoration: none;
 }
 a.topNews:hover{
   color:#999999;
 }
-p.topNews  {
+p.textTopNews  {
   width: 497px;
   height: 99px;
   font-size: 16px;
   line-height: 19px;
   color: #666666;
-  margin-top: 10px;
+  padding-top: 20px;
 }
 
 /* Свойства колонок справа от ТопНовости */
 article.burgerMainArticles {
   height: 470px;
   width: 430px;
-  margin-top: 35px;
-  margin-left: 30px;
+  padding-left: 30px;
+}
+section.mainArticles {
+  height: 110px;
+  width: 430px;
+  padding-bottom: 20px;
 }
 div.imgMainArticles {
-  height:95px; 
-  width: 95px;
+  height:100px; 
+  width: 100px;
   background-color:#333333 ;
   float: left;/* Размещение изображения слева от текста*/
   border: 5px double #e0e0e0;
-  margin-right: 10px;
 }
 div.imgMainArticles p {
   font-size: 15px;
   line-height: 15px;
   color: #ffffff;
-  padding: 22px 5px;
+  padding: 40px 8px;
 }
 /* свойства статьи без изображения */
 a.mainNewsNoImg {
   font-size: 22px;
   line-height: 22px;
   color: #444444;
-  text-decoration: none;
 }
 a.mainNewsNoImg:hover{
   color:#999999;
@@ -201,13 +197,13 @@ p.mainNewsNoImg {
   font-size: 16px;
   line-height: 19px;
   color: #666666;
+  padding-top: 17px;
 }
 /* Свойства статей с изображением */
 a.mainNews {
   font-size: 22px;
   line-height: 22px;
   color: #444444;
-  text-decoration: none;
 }
 a.mainNews:hover{
   color:#999999;
@@ -217,43 +213,45 @@ p.mainNews {
   font-size: 16px;
   line-height: 19px;
   color: #666666;
+  padding-top: 17px;
 }
 
 
 /* Свойства основного контента */
 article.content {
-  height: 700px;
+  height: 725px;
   display: flex;
   border-bottom: 3px double  #999999;
-  margin: 0px 20px;
+
 }
 
-/* Свойства верхней праой половины контента */
+/* Свойства верхней левой половины контента */
 article.column{
   height: 355px;
   width: 600px;
-  margin: 0px;
   display: flex;
+  padding-top:30px;
+  margin-right: 30px;
   border-bottom: 3px double #999999;
-}
-section.rightColumn {
-  margin-left: 20px;
 }
 section.mainColumn {
   height: 90px;
   width: 290px; 
-  margin-top: 0px;
   position: relative;/* позиционирование блока для правильного размещения ссылки RED MORE*/
   z-index: 0;/* Индекс задан для того что бы плавающее меню перекрывало блоки*/
+  padding: 10px 20px 0 0;
+}
+section.rightColumn{
+  padding-right: 20px;
 }
 article.mainContent h4 {
   font-size: 16px;
   line-height: 16px;
   color: #666666;
-  font-weight: 500;
+  font-weight: normal;
   border-bottom: 1px solid #666666;
-  margin-top: 33px;
-  padding-bottom: 15px;
+  margin-right: 20px;
+  padding-bottom: 10px;
 }
 div.imgColum {
   width: 65px;
@@ -261,6 +259,7 @@ div.imgColum {
   background-color: #333333;
   border: 3px double #e0e0e0;
   float: left;
+  margin-right: 8px;
 }
 div.imgColum p {
   font-size: 16px;
@@ -268,252 +267,208 @@ div.imgColum p {
   color: #ffffff;
   text-align: center;
   margin: auto;
-  padding-top: 8px;
+  padding-top: 7px;
 }
-  h3.mainColumn {
+  h3.headingMainColumn {
   font-size: 12px;
   line-height: 12px;
   color: #444444;
-  margin-bottom: 0px;
-  margin-top: 0px;
-  padding-left: 80px;
+  padding: 5px;
 }
- p.mainColumn {
+ p.textMainColumn {
   width: 210px;
   height: 46px;
   font-size: 12px;
-  line-height: 12px;
+  line-height: 14px;
   color: #666666;
-  margin-top: 3px;
   padding-left: 80px;
 }
 div.readMore {
   position: absolute;/* позиционирование блока для правильного размещения ссылки RED MORE*/
-  top: 55px;
-  right: 0px;
+  top: 85px;
+  right: 10px;
   width: 85px;
   height: 7px;
 }
-a.readMore{
-   font-size: 11px;
+div.readMore a{
+  font-size: 11px;
   line-height: 11px;
-  text-decoration: none;
 }
-a.readMore:link, a.readMore:visited {
-  color: #982115;
+div.readMore a:link, div.readMore a:visited {
+  color:#982115;
 }
-a.readMore:hover, a.readMore:active {
-  color:  #3b2320;
+div.readMore a:hover, div.readMore a:active {
+  color:#3b2320;
 }
-
 /* Свойства правой нижней половины контента */
 article.tabs {
-  height: 355px;
+  height: 320px;
   width: 600px;
 }
-
 /* Свойства менюшки */
-nav.tabs {
+nav.tabsMenu {
   width: 600px;
   height: 35px;
   background-color: #2D2928;
-  margin-top: 30px;
+  margin:20px 0 20px;
 }
-nav.tabs ul{
-  padding-left: 0px;
+nav.tabsMenu ul{
+  padding-top: 7px;
 }
-nav.tabs li {
-  display:inline-block;
+nav.tabsMenu li {
   font-size: 12px;
   line-height: 14px;
   font-weight: bold;
-  padding-left: 15px;
-  padding-right: 10px;
+  padding: 11px;
 } 
-li.rightBattom { 
+li.rightButton { 
   border-left: 1px solid  #e0e0e0;
-  padding: 10px 0px;
 }
-nav.tabs a:link, nav.tabs a:visited {
+nav.tabsMenu a:link, nav.tabsMenu a:visited {
   color: #ffffff;
   text-decoration: none;
 }
-nav.tabs a:hover, nav.tabs a:active{
+nav.tabsMenu a:hover, nav.tabsMenu a:active{
   color: #c0c0c0;
 }
-
 /* Свойства колонок */
-section.tabs {
+section.tabsColumn {
   width: 130px;
   height: 235px;
   display: inline-block;
-  margin-top: 15px;
 }
-section.left {
-  margin-right: 22px;
+section.tabsColumnLeft {
+  padding-right: 22.82px;
 }
-a.tabs:link, a.tabs:visited {
+section.tabsColumn a:link, section.tabsColumn a:visited {
   font-size: 12px;
   line-height: 14px;
   color: #982115;
-  text-decoration: none;
-  font-weight: 700;
+  font-weight: bold;
 }
-a.tabs:hover, a.tabs:active {
+section.tabsColumn a, section.tabsColumn a:active {
   color:  #250401;
 }
 p.tagName a:link, p.tagName a:visited{
   color: #982115;
-  text-decoration: none;
 }
 p.tagName a:hover, p.tagName a:active{
   color:  #250401;
   text-decoration: underline;
 }
 div.imgTabs {
-  height: 83px;
-  width: 125px;
+  height: 80px;
+  width: 122px;
   background-color: #333333;
-  border: 3px double #e0e0e0;
-  margin-top: 5px;
+  border: 5px double #e0e0e0;
+  margin: 10px 0 5px;
 }
 div.imgTabs p{
   font-size: 16px;
   line-height: 16px;
   color: #ffffff;
   text-align: center;
-  padding-top: 20px;
+  padding-top: 33px;
 }
-p.tabs, p.tagName {
+p.textTabsColumn, p.tagName {
   width: 131px;
   height: 67px;
   font-size: 12px;
   line-height: 14px;
   color: #666666;
+  padding-top: 10px;
 }
-
-
 /* Свойства правой половины контента */
 article.asideContent {
   height: 640px;
   width: 330px;
-  margin-left: 30px;
- display: flex;
+  display: flex;
+  padding-top: 25px;
 }
-
 /* Свойства блока места под рекламу */
 section.advertisement {
   height: 320px;
   width: 160px;
   margin-right: 10px;
- 
 }
-section.advertisement h2 {
+article.asideContent h2 {
   font-size: 13px;
   line-height: 13px;
   color: #666666;
   border-top: 5px solid #999999;
-  padding-top: 5px;
-  margin-top: 33px;
+  padding: 10px 0 15px;
 }
 div.advertisement {
   height: 600px;
   width: 160px;
   background-color:#333333 ;
-  margin-top: 15px;
 }
 div.advertisement p{
   font-size: 16px;
   line-height: 16px;
   color: #ffffff;
   text-align: center;
-  padding-top: 284px;
+  padding-top: 292px;
 }
-
 /* Свойства колонок с ссылками */
 section.linkColumn {
   height: 640px;
   width: 160px;
 }
-section.linkColumn div {
-  margin-bottom: 5px;
-}
 div.categories {
-  margin-top: 33px;
-}
-section.linkColumn h3 {
-  font-size: 13px;
-  line-height: 13px;
-  color: #666666;
-  border-top: 5px solid #999999;
-  padding-top: 5px;
-  margin-bottom: 10px;
+  padding-bottom: 12px;
 }
 section.linkColumn a {
   font-size: 13px;
   line-height: 13px;
   color: #982216; 
 }
-section.linkColumn a:link, section.linkColumn a:visited {
-  text-decoration: none;
-}
 section.linkColumn a:hover, section.linkColumn a:active {
   color: #3a3635;
   text-decoration: underline;
 }
-
-
-
 /* Свойства футера */
 article.lowerColumn {
+  height: 205px;
   display:flex;
-  margin-left: 20px;
-  margin-right: 20px;
   border-bottom: 3px double #999999;
 }
-section.lowerColumn{
-  height: 175px;
+article.lowerColumn section{
+  height: 140px;
   width: 180px;
-  margin-bottom: 20px;
 }
-section.leftFooter {
-  margin-right: 20px;
+section.leftColumnFotter {
+  margin-right: 16px;
 }
-section.lowerColumn h2 {
+article.lowerColumn h2 {
   font-size: 13px;
   line-height: 13px;
   color: #666666;
-  padding-bottom: 10px;
   border-bottom: 1px solid #bcbcbc;
+  padding-bottom: 9px;
 }
-section.lowerColumn ul {
-  list-style-type: none;
-  margin: 0px;
-  padding: 0px;
+article.lowerColumn ul{
+  padding-top: 9px;
 }
-section.lowerColumn a{
+article.lowerColumn a{
   font-size: 12px;
   line-height: 19px;
   color: #982216;
   font-family: "Verdana";
-  text-decoration: none;
 }
-section.lowerColumn a:hover, section.lowerColumn a:active{
+article.lowerColumn a:hover, article.lowerColumn a:active{
   color: #3a3635;
   text-decoration: underline;
 }
-
-
 /* свойства копирайта */
 div.copiright {
   width: 960px;
-  height: 60px;
-  margin: 0px 20px;
+  height: 80px;
   position: relative;
   z-index: 0;
 }
 div.copiright p {
-  font-size: 12px;
+ font-size: 12px;
  line-height: 12px;
  color: #787878;
 }
@@ -522,13 +477,13 @@ div.domainName {
   width: 315px;
   height: 10px;
   left: 0px;
-  top: 15px;
+  top: 37px;
 }
 div.templaneName {
   position: absolute;
   width: 155px;
   height: 10px;
   right: 0px;
-  left: 820px;
-  top: 15px;
+  left: 818px;
+  top: 37px;
 }
