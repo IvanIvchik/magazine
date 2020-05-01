@@ -351,6 +351,7 @@ section.tabsColumn a, section.tabsColumn a:active {
 }
 p.tagName a:link, p.tagName a:visited{
   color: #982115;
+  font-weight: normal;
 }
 p.tagName a:hover, p.tagName a:active{
   color:  #250401;
