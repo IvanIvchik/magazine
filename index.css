@@ -285,7 +285,7 @@ div.imgColum p {
 }
 div.readMore {
   position: absolute;/* позиционирование блока для правильного размещения ссылки RED MORE*/
-  top: 85px;
+  top: 75px;
   right: 10px;
   width: 85px;
   height: 7px;
