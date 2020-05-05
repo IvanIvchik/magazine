@@ -1,295 +1,315 @@
 /* Сброс Стилей */
-body,h1,h2,h3,h4,p,ul,li,div {
-  margin: 0;
+body,h1,h2,h3,h4,p,ul,li,div,article,section {
+  margin:0;
+  padding:0;
 }
 ul {
-  padding: 0;
-  list-style: none;
+  padding:0;
+  list-style:none;
 }
-li:not([class="list"]) {
-  display: inline-block;
+li {
+  display:inline-block;
 }
 a {
-  text-decoration: none;
+  text-decoration:none;
 }
+
+
 html {
-  background-color: #343434;
-  font-family: "Georgia";
+  background-color:#343434;
+  font-family:"Georgia";
 }
 
 body {
-  background-color: #e0e0e0;
-  width: 1000px; 
-  margin: auto;
-}
-header,main,footer,nav.topMenu {
-  padding: 0 20px;
+  background-color:#e0e0e0;
+  width:1000px; 
+  margin:auto;
 }
 
+header,main,footer,nav.topMenu {
+  padding:0 20px;
+}
+nav, article, section{
+  display:flex;
+}
+
+.logo, .topNavigation, .column h4, .readMore a, .tabsMenu {
+  text-transform: uppercase;
+}
+/* Псевдо-элементы */
+.tagName a::after {
+  content:" »";
+}
+.readMore a::after{
+  content:" »";
+}
+.categories a::before {
+  content:"» ";
+}
 /* Свойства верхнего подвижного меню */
 nav.topMenu {
-  height: 52px;
-  width: 960px;
+  height:52px;
+  width:960px;
   background-color:#2D2928;
-  position: fixed;/* Задаётся подвижность*/
-  z-index: 1;/* Индекс для отображения над другими позиционированными элементами*/
+  position:fixed;/* Задаётся подвижность*/
+  z-index:4;/* Индекс для отображения над другими позиционированными элементами*/
+  justify-content:space-between;
 }
-nav.topMenu ul{
-  padding-top: 15px;
+nav.topMenu div {
+  align-self:center;
 }
-
 /* Созздание в верхней левом углу меню разделительной линии */
   a.line {
-    border-left: 1px solid #c4c4c4;
-    padding-left: 5px;
+    border-left:1px solid #c4c4c4;
+    padding-left:5px;
   }
-  a.buttonTopMenu:link,a.buttonTopMenu:visited {
-    font-size: 12px;
-    line-height: 14px; 
-    color: #c4c4c4;
-    padding-right: 2px;
+  div.buttonTopMenu a:link,div.buttonTopMenu a:visited {
+    font-size:12px;
+    line-height:14px; 
+    color:#c4c4c4;
+    padding-right:2px;
   }
-  a.buttonTopMenu:hover,a.buttonTopMenu:active  {
-    text-decoration: underline;
+  div.buttonTopMenu a:hover,div.buttonTopMenu a:active  {
+    text-decoration:underline;
   }
 
-/* Свойства иконок в верхнем правом углу иконок  */
-  li.icon{
-    float: right;
-  }
+/* Свойства иконок в верхнем правом углу подвижного меню  */
 a.ellipse{
   border:6px solid #ffffff;
-  width: 32px;
-  height: 32px;
-  border-radius: 100%;
-  background-color: #ffffff;
-  margin-left: 8px;
-  color: #ffffff ;
+  width:32px;
+  height:32px;
+  border-radius:100%;
+  background-color:#ffffff;
+  margin-left:8px;
+  color:#ffffff ;
 }
 
 /* Свойства логотипа */
 div.logo {
-  height: 185px;
-  padding-top: 52px;
+  height:185px;
+  padding-top:52px;
 }
   div.logo h1 {
-  font-size: 100px;
-  line-height: 120px;
-  color: #282828;
-  text-align: center;
-  font-weight: normal;
-  padding: 10px 0;
+  font-size:100px;
+  line-height:120px;
+  color:#282828;
+  text-align:center;
+  font-weight:normal;
+  padding:10px 0;
   } 
   div.logo p {
-    font-size: 20px;
-    line-height: 24px;
-    color: #4a4a4a;
-    text-align: center;
+    font-size:20px;
+    line-height:24px;
+    color:#4a4a4a;
+    text-align:center;
   }
  
 /* Свойства ТопМеню */
 nav.topNavigation {
-   height: 35px;
-   border-top:3px double #999999 ;
-   border-bottom:3px double #999999 ;
-   display: flex;
-   flex-wrap: wrap;
-   align-content: center;
+   height:35px;
+   border-top:3px double #999999;
+   border-bottom:3px double #999999;
+   flex-wrap:wrap;
+   align-content:center;
 }
  nav.topNavigation li{
-   padding-right: 36px;
+   padding-right:36px;
  }
  nav.topNavigation a:link,nav.topNavigation a:visited {
-  font-size: 14px;
-  line-height: 14px;
-  color: #333333;
-  text-decoration: none;
+  font-size:14px;
+  line-height:14px;
+  color:#333333;
+  text-decoration:none;
  }
  nav.topNavigation a:hover,nav.topNavigation a:active  {
-  color: #999999;
+  color:#999999;
 }
  
 /* Раздел Main */
 main{
-  padding-top: 35px;
-  padding-bottom: 35px;
+  padding-top:30px;
+  padding-bottom:35px;
 }
 /* Верхняя часть майн и её размещение */
 article.mainArticles {
-  height: 540px;
-  border-bottom: 3px double #999999;
-  display: flex;
+  border-bottom:3px double #999999;
+  justify-content:space-between;
+  padding-bottom:30px;
 }
 
 /* сойства ТопНовости */
 section.topArticles {
-  height: 500px;
-  width: 500px;
+  flex-direction:column;
+  margin-right:30px;
 }
 div.imgTopArticles {
   height:320px; 
-  width: 500px;
+  width:500px;
   background-color:#333333;
-  margin-bottom: 17px;
+  flex-shrink:0;
+  margin-bottom:20px;
 }
 div.imgTopArticles p {
-  font-size: 36px;
-  line-height: 36px;
-  color: #ffffff;
-  padding: 145px;
+  font-size:36px;
+  line-height:36px;
+  color:#ffffff;
+  padding:145px;
+  
 }
-a.topNews  {
-  font-size: 22px;
-  line-height: 22px;
-  color: #444444;
+a.topNews {
+  font-size:22px;
+  line-height:22px;
+  color:#444444;
 }
 a.topNews:hover{
   color:#999999;
 }
 p.textTopNews  {
-  width: 497px;
-  height: 99px;
-  font-size: 16px;
-  line-height: 19px;
-  color: #666666;
-  padding-top: 20px;
+  width:497px;
+  height:99px;
+  font-size:16px;
+  line-height:19px;
+  color:#666666;
+  padding-top:20px;
 }
 
 /* Свойства колонок справа от ТопНовости */
 article.burgerMainArticles {
-  height: 470px;
-  width: 430px;
-  padding-left: 30px;
+  flex-direction:column;
+  justify-content:space-between;
 }
-section.mainArticles {
-  height: 110px;
-  width: 430px;
-  padding-bottom: 20px;
+section.mainArticles:not([id="endColumn"]) {
+  margin-bottom:20px;
 }
 div.imgMainArticles {
   height:100px; 
-  width: 100px;
+  width:100px;
   background-color:#333333 ;
-  float: left;/* Размещение изображения слева от текста*/
-  border: 5px double #e0e0e0;
-  margin-right: 10px;
+  float:left;/* Размещение изображения слева от текста*/
+  border:5px double #e0e0e0;
+  flex-shrink:0;
+  margin-right:10px;
 }
 div.imgMainArticles p {
-  font-size: 15px;
-  line-height: 15px;
-  color: #ffffff;
-  padding: 40px 8px;
+  font-size:15px;
+  line-height:15px;
+  color:#ffffff;
+  padding:40px 8px;
 }
 /* свойства статьи без изображения */
+section.mainArticlesNoImg {
+  flex-direction:column;
+  margin-bottom:20px;
+}
 a.mainNewsNoImg {
-  font-size: 22px;
-  line-height: 22px;
-  color: #444444;
+  font-size:22px;
+  line-height:22px;
+  color:#444444;
 }
 a.mainNewsNoImg:hover{
   color:#999999;
 }
-p.mainNewsNoImg {
-  height: 73px;
-  font-size: 16px;
-  line-height: 19px;
-  color: #666666;
-  padding-top: 17px;
+p.textMainNewsNoImg {
+  height:65px;
+  font-size:16px;
+  line-height:19px;
+  color:#666666;
+  padding-top:10px;
 }
 /* Свойства статей с изображением */
-a.mainNews {
-  font-size: 22px;
-  line-height: 22px;
-  color: #444444;
+div.mainNews {
+  padding:10px 0;
 }
-a.mainNews:hover{
+div.mainNews a {
+  font-size:22px;
+  line-height:22px;
+  color:#444444;
+}
+div.mainNews a:hover{
   color:#999999;
 }
 p.textMainNews {
-  height: 66px;
-  font-size: 16px;
-  line-height: 19px;
-  color: #666666;
-  padding-top: 17px;
+  height:66px;
+  font-size:16px;
+  line-height:19px;
+  color:#666666;
+  padding-top:10px;
 }
 
 
 /* Свойства основного контента */
 article.content {
-  height: 725px;
-  display: flex;
-  border-bottom: 3px double  #999999;
-
+  border-bottom:3px double  #999999;
+  justify-content:space-between;
 }
-
+article.mainContent {
+  width:600px;
+  flex-direction:column;
+ margin-right:30px;
+}
 /* Свойства верхней левой половины контента */
-article.column{
-  height: 355px;
-  width: 600px;
-  display: flex;
-  padding-top:30px;
-  margin-right: 30px;
-  border-bottom: 3px double #999999;
+article.column{                                                                
+  padding:30px 0;
+  border-bottom:2px double #999999;
+  justify-content:space-between;
 }
 section.mainColumn {
-  height: 90px;
-  width: 290px; 
-  position: relative;/* позиционирование блока для правильного размещения ссылки RED MORE*/
-  z-index: 0;/* Индекс задан для того что бы плавающее меню перекрывало блоки*/
-  padding: 10px 20px 0 0;
+  height:80px;
+  width:290px; 
+  padding-top:5px;
+  margin-top:10px;
+  position:relative;
 }
-section.rightColumn{
-  padding-right: 20px;
+section.rightColumn, section.leftColumn{
+  flex-direction:column;
 }
 article.mainContent h4 {
-  font-size: 16px;
-  line-height: 16px;
-  color: #666666;
-  font-weight: normal;
-  border-bottom: 1px solid #666666;
-  margin-right: 20px;
-  padding-bottom: 10px;
+  font-size:16px;
+  line-height:16px;
+  color:#666666;
+  font-weight:normal;
+  border-bottom:1px solid #666666;
+  padding-bottom:10px;
 }
 div.imgColum {
-  width: 65px;
-  height: 65px;
-  background-color: #333333;
-  border: 3px double #e0e0e0;
-  float: left;
-  margin-right: 8px;
+  width:60px;
+  height:60px;
+  background-color:#333333;
+  border:5px double #e0e0e0;
+  margin-right:8px;
+  flex-shrink:0;
 }
 div.imgColum p {
-  font-size: 16px;
-  line-height: 16px;
-  color: #ffffff;
-  text-align: center;
-  margin: auto;
-  padding-top: 7px;
+  font-size:16px;
+  line-height:16px;
+  color:#ffffff;
+  text-align:center;
+  margin:auto;
+  padding-top:5px;
 }
   h3.headingMainColumn {
-  font-size: 12px;
-  line-height: 12px;
-  color: #444444;
-  padding: 5px;
+  font-size:12px;
+  line-height:12px;
+  color:#444444;
+  padding:5px 0;
 }
  p.textMainColumn {
-  width: 210px;
-  height: 46px;
-  font-size: 12px;
-  line-height: 14px;
-  color: #666666;
-  padding-left: 80px;
+  width:210px;
+  height:46px;
+  font-size:12px;
+  line-height:14px;
+  color:#666666;
 }
 div.readMore {
-  position: absolute;/* позиционирование блока для правильного размещения ссылки RED MORE*/
-  top: 75px;
-  right: 10px;
-  width: 85px;
-  height: 7px;
+ position:absolute;
+ top:65px;
+ right:0;
+ width:80px;
+ height:20px;
 }
 div.readMore a{
-  font-size: 11px;
-  line-height: 11px;
+  font-size:11px;
+  line-height:11px;
 }
 div.readMore a:link, div.readMore a:visited {
   color:#982115;
@@ -299,189 +319,183 @@ div.readMore a:hover, div.readMore a:active {
 }
 /* Свойства правой нижней половины контента */
 article.tabs {
-  height: 320px;
-  width: 600px;
+  padding:25px 0;
 }
 /* Свойства менюшки */
+article.tabs {
+flex-direction:column;
+}
 nav.tabsMenu {
-  width: 600px;
-  height: 35px;
+height:35px;
+width:600px;
+}
+nav.tabsMenu div {
+  height:100%;
+  font-size:12px;
+  line-height:14px;
+  font-weight:bold;
+  margin-right:1px;
   background-color: #2D2928;
-  margin:20px 0 20px;
-}
-nav.tabsMenu ul{
-  padding-top: 0;
-}
-nav.tabsMenu li {
-  font-size: 12px;
-  line-height: 14px;
-  font-weight: bold;
-  padding: 11px;
+  display:flex;
+  flex-wrap:wrap;
+  align-content:center;
+  padding:0 10px;
 } 
-li.rightButton { 
-  border-left: 1px solid  #e0e0e0;
+div.rightButton {
+  flex-grow:1;
 }
-nav.tabsMenu a:link, nav.tabsMenu a:visited {
+nav.tabsMenu div a:link, nav.tabsMenu div a:visited {
   color: #ffffff;
   text-decoration: none;
 }
-nav.tabsMenu a:hover, nav.tabsMenu a:active{
+nav.tabsMenu div a:hover, nav.tabsMenu div a:active{
   color: #c0c0c0;
 }
 /* Свойства колонок */
-section.tabsColumn {
-  width: 130px;
-  height: 235px;
-  display: inline-block;
+article.contentTabs {
+  justify-content:space-between;
+  padding-top:20px;
 }
-section.tabsColumnLeft {
-  padding-right: 22.8px;
+section.tabsColumn {
+  flex-direction:column;
+  height:240px;
+}
+section.tabsColumn:not([id="rightTabs"]){
+ margin-right:24px;
 }
 section.tabsColumn a:link, section.tabsColumn a:visited {
-  font-size: 12px;
-  line-height: 14px;
-  color: #982115;
-  font-weight: bold;
+  font-size:12px;
+  line-height:14px;
+  color:#982115;
+  font-weight:bold;
 }
-section.tabsColumn a, section.tabsColumn a:active {
-  color:  #250401;
+section.tabsColumn a:hover, section.tabsColumn a:active {
+  color:#250401;
 }
 p.tagName a:link, p.tagName a:visited{
-  color: #982115;
-  font-weight: normal;
+  color:#982115;
+  font-weight:normal;
 }
 p.tagName a:hover, p.tagName a:active{
   color:  #250401;
-  text-decoration: underline;
+  text-decoration:underline;
 }
 div.imgTabs {
-  height: 80px;
-  width: 122px;
-  background-color: #333333;
-  border: 5px double #e0e0e0;
-  margin: 10px 0 5px;
+  height:80px;
+  width:122px;
+  background-color:#333333;
+  border:5px double #e0e0e0;
+  flex-shrink:0;
+  margin:15px 0 10px;
 }
 div.imgTabs p{
-  font-size: 16px;
-  line-height: 16px;
-  color: #ffffff;
-  text-align: center;
-  padding-top: 33px;
+  font-size:16px;
+  line-height:16px;
+  color:#ffffff;
+  text-align:center;
+  padding-top:33px;
 }
 p.textTabsColumn, p.tagName {
-  width: 131px;
-  height: 67px;
-  font-size: 12px;
-  line-height: 14px;
-  color: #666666;
-  padding-top: 10px;
+  width:131px;
+  height:67px;
+  font-size:12px;
+  line-height:14px;
+  color:#666666;
+  padding-bottom:10px;
 }
 /* Свойства правой половины контента */
 article.asideContent {
-  height: 640px;
-  width: 330px;
-  display: flex;
-  padding-top: 25px;
+  padding-top:30px;
 }
 /* Свойства блока места под рекламу */
 section.advertisement {
-  height: 320px;
-  width: 160px;
-  margin-right: 10px;
+  flex-direction:column;
+  margin-right:20px;
 }
 article.asideContent h2 {
-  font-size: 13px;
-  line-height: 13px;
-  color: #666666;
-  border-top: 5px solid #999999;
-  padding: 10px 0 15px;
+  font-size:13px;
+  line-height:13px;
+  color:#666666;
+  border-top:5px solid #999999;
+  padding:7px 0 18px;
 }
-div.advertisement {
-  height: 600px;
-  width: 160px;
+div.advertisementImage {
+  height:600px;
+  width:160px;
   background-color:#333333 ;
 }
-div.advertisement p{
-  font-size: 16px;
-  line-height: 16px;
-  color: #ffffff;
-  text-align: center;
-  padding-top: 292px;
+div.advertisementImage p{
+  font-size:16px;
+  line-height:16px;
+  color:#ffffff;
+  text-align:center;
+  padding-top:292px;
 }
 /* Свойства колонок с ссылками */
 section.linkColumn {
-  height: 640px;
-  width: 160px;
+  flex-direction:column;
 }
 div.categories {
-  padding-bottom: 12px;
+  margin-bottom:10px;
+}
+div.categories h2{
+  padding-bottom:15px;
+}
+section.linkColumn li {
+  padding-bottom:1px;
 }
 section.linkColumn a {
-  font-size: 13px;
-  line-height: 13px;
-  color: #982216; 
+  font-size:13px;
+  line-height:13px;
+  color:#982216; 
 }
 section.linkColumn a:hover, section.linkColumn a:active {
-  color: #3a3635;
-  text-decoration: underline;
+  color:#3a3635;
+  text-decoration:underline;
 }
 /* Свойства футера */
 article.lowerColumn {
-  height: 205px;
-  display:flex;
-  border-bottom: 3px double #999999;
+  border-bottom:3px double #999999;
 }
 article.lowerColumn section{
-  height: 140px;
-  width: 180px;
+  width:180px;
+  flex-direction:column;
+  justify-content:space-between;
+  padding-bottom:35px;
 }
 section.leftColumnFotter {
-  margin-right: 16px;
+  margin-right:16px;
 }
 article.lowerColumn h2 {
-  font-size: 13px;
-  line-height: 13px;
-  color: #666666;
-  border-bottom: 1px solid #bcbcbc;
-  padding-bottom: 9px;
+  font-size:13px;
+  line-height:13px;
+  color:#666666;
+  border-bottom:1px solid #bcbcbc;
+  padding-bottom:9px;
 }
 article.lowerColumn ul{
-  padding-top: 9px;
+  padding-top:9px;
 }
 article.lowerColumn a{
-  font-size: 12px;
-  line-height: 19px;
-  color: #982216;
-  font-family: "Verdana";
+  font-size:12px;
+  line-height:19px;
+  color:#982216;
+  font-family:"Verdana";
 }
 article.lowerColumn a:hover, article.lowerColumn a:active{
-  color: #3a3635;
-  text-decoration: underline;
+  color:#3a3635;
+  text-decoration:underline;
 }
 /* свойства копирайта */
 div.copiright {
-  width: 960px;
-  height: 80px;
-  position: relative;
-  z-index: 0;
+  display:flex;
+  justify-content:space-between;
 }
 div.copiright p {
- font-size: 12px;
- line-height: 12px;
- color: #787878;
+ font-size:12px;
+ line-height:12px;
+ color:#787878;
 }
-div.domainName {
-  position: absolute;
-  width: 315px;
-  height: 10px;
-  left: 0px;
-  top: 37px;
-}
-div.templaneName {
-  position: absolute;
-  width: 155px;
-  height: 10px;
-  right: 0px;
-  left: 818px;
-  top: 37px;
+div.copiright div {
+ margin:36px 0;
 }

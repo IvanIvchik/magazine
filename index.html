@@ -10,32 +10,38 @@
 <body>
       <!-- Содержимое подвижнего верхнего меню. В макете "Top bar"-->
       <nav class ="topMenu">
-        <ul>
-            <li><a class="buttonTopMenu" href="index.html">Sign Up</a></li>
-            <li><a class="buttonTopMenu line" href="index.html">Login</a></li>
-            <li><a class="buttonTopMenu line" href="index.html">RSS Feeds</a></li>
-            <li><a class="buttonTopMenu line" href="index.html">Archived News</a></li>
-            <li class ="icon"><a class="ellipse" href="">" "</a></li>
-            <li class ="icon"><a class="ellipse" href="">" "</a></li>
-            <li class ="icon"><a class="ellipse" href="">" "</a></li>
-            <li class ="icon"><a class="ellipse" href="">" "</a></li>
-        </ul>
+          <div class="buttonTopMenu">
+               <ul>
+                   <li><a href="index.html">Sign Up</a></li>
+                   <li><a class="line" href="index.html">Login</a></li>
+                   <li><a class="line" href="index.html">RSS Feeds</a></li>
+                   <li><a class="line" href="index.html">Archived News</a></li>
+               </ul>   
+             </div>
+            <div class="icons">
+                <ul>    
+                    <li><a class="ellipse" href="">" "</a></li>
+                    <li><a class="ellipse" href="">" "</a></li>
+                    <li><a class="ellipse" href="">" "</a></li>
+                    <li><a class="ellipse" href="">" "</a></li>
+                </ul>
+            </div>
     </nav>
    
     <header>
         <!-- Логотип. В макете "Logo" -->
         <div class="logo">
-            <h1>MAG MAGAZINE</h1>
-            <p>ALL THE LATEST & INFORMATION IN THE WORLD</p>
+            <h1>mag magazine</h1>
+            <p>all the laset & information in the world</p>
         </div>
         <!-- Содержимое навигационного меню. В макете "Top Navigation" -->
         <nav class="topNavigation"> 
             <ul>
-                <li><a href="index.html">HOMEPAGE</a></li>
-                <li><a href="index.html">STELE DEMO</a></li>
-                <li><a href="index.html">FULL WIDTH</a></li>
-                <li><a href="index.html">DROPDOWN</a></li>
-                <li><a href="index.html">LINK TEXT</a></li>
+                <li><a href="index.html">homepage</a></li>
+                <li><a href="index.html">stele demo</a></li>
+                <li><a href="index.html">full width</a></li>
+                <li><a href="index.html">dropdawn</a></li>
+                <li><a href="index.html">link text</a></li>
             </ul>
         </nav>
     </header>
@@ -62,17 +68,15 @@
                     <div class="imgMainArticles">
                         <p>100 x 100px</p>
                     </div>
-                    <a class="mainNews" href="">
-                        Cursus penati saccum ut curabi
-                    </a>
-                    <p class="textMainNews">Cursuspenatisaccum ut carrabitur nulla tellus tor amers a in curabitur pede. idet mollisi eros dis orci congue elis et curabitur.</p>
+                    <div class="mainNews">
+                        <a href="">Cursus penati saccum ut curabi</a>
+                        <p class="textMainNews">Cursuspenatisaccum ut carrabitur nulla tellus tor amers a in curabitur pede. idet mollisi eros dis orci congue elis curabitur.</p>
+                    </div>
                 </section>
                 <!-- Содержимое следующей колонки (№2) -->
-                <section class="mainArticles">
-                    <a class="mainNewsNoImg" href="">
-                        Cursus penati saccum ut curabitur nulla.
-                    </a>
-                    <p class="textMainNews">Cursuspenatisaccum ut carrabitur nulla tellus tor amers a in curabitur pede idet mollisi eros dis orci congue elis et curabitur consequam intedquam. Curabiturpisametur in ante.</p>
+                <section class="mainArticlesNoImg">
+                    <a class="mainNewsNoImg" href="">Cursus penati saccum ut curabitur nulla.</a>
+                    <p class="textMainNewsNoImg">Cursuspenatisaccum ut carrabitur nulla tellus tor amers a in curabitur pede. Idet mollisi eros dis congue elis et curabitur consequam intedquam. Curabiturpisametur in ante.</p>
                 </section>
                 <!-- Содержимое следующей колонки (№3) -->
                 <section class="mainArticles">
@@ -80,21 +84,21 @@
                     <div class="imgMainArticles">
                         <p class>100 x 100px</p>
                     </div>
-                    <a class="mainNews" href="">
-                        Cursus penati saccum ut curabi
-                    </a>
-                    <p class="textMainNews">Cursuspenatisaccum ut carrabitur nulla tellus tor amers a in curabitur pede. idet mollisi eros dis orci congue elis et curabitur.</p>
+                    <div class="mainNews">
+                        <a href="">Cursus penati saccum ut curabi</a>
+                        <p class="textMainNews">Cursuspenatisaccum ut carrabitur nulla tellus tor amers a in curabitur pede. idet mollisi eros dis orci congue elis curabitur.</p>
+                    </div>
                 <!-- Содержимое заключительной колонки (№4) -->
                 </section>
-                <section class="mainArticles">
+                <section class="mainArticles" id="endColumn">
                     <!-- Блоком задаётся изображение -->
                     <div class="imgMainArticles">
                         <p>100 x 100px</p>
                     </div>
-                    <a class="mainNews" href="">
-                        Cursus penati saccum ut curabi
-                    </a>
-                    <p class="textMainNews">Cursuspenatisaccum ut carrabitur nulla tellus tor amers a in curabitur pede. idet mollisi eros dis orci congue elis et curabitur.</p>   
+                    <div class="mainNews">
+                        <a href="">Cursus penati saccum ut curabi</a>
+                        <p class="textMainNews">Cursuspenatisaccum ut carrabitur nulla tellus tor amers a in curabitur pede. idet mollisi eros dis orci congue elis curabitur.</p>
+                    </div>
                 </section>
             </article>
         
@@ -108,19 +112,20 @@
                 <article class="column">
                     <!-- Содержимое левой колонки. В макете "Content/Left column/1" -->
                     <section class="leftColumn">
-                        <h4>LOREM IPSUM</h4>
+                        <h4>lorem ipsum</h4>
                         <section class="mainColumn">
                             <!-- Блоком задаётся изображение -->
                             <div class="imgColum">
                                 <p>60<br>x<br>60px</p>
                             </div>
-                            
-                            <h3 class="headingMainColumn">Indonectetus facilis</h3>
-                            <p class="textMainColumn">maurisque eros molest nunc anteget sed vel lacus mus semper. Anterd umnullam interdum eros dui urna</p>
-                            <!-- Блок для размещения ссылки для дольнейшего позиционирования в CSS -->
-                            <div class="readMore">
-                                <a href="">READ MORE »</a>
+                            <div class="columnComtent">
+                                <h3 class="headingMainColumn">Indonectetus facilis</h3>
+                                <p class="textMainColumn">maurisque eros molest nunc anteget sed vel lacus mus semper. Anterd umnullam interdum eros dui urna</p>
+                                <!-- Блок для размещения ссылки для дольнейшего позиционирования в CSS -->
                             </div>
+                            <div class="readMore">
+                                <a href="">read more</a>
+                             </div>
                         </section>
                                               
                         <section class="mainColumn">
@@ -128,13 +133,14 @@
                             <div class="imgColum">
                                 <p>60<br>x<br>60px</p>
                             </div>
-                            
-                            <h3 class="headingMainColumn">Indonectetus facilis</h3>
-                            <p class="textMainColumn">maurisque eros molest nunc anteget sed vel lacus mus semper. Anterd umnullam interdum eros dui urna</p>
-                            <!-- Блок для размещения ссылки для дольнейшего позиционирования в CSS -->
-                            <div class="readMore">
-                                <a href="">READ MORE »</a>
+                            <div class="columnComtent">
+                                <h3 class="headingMainColumn">Indonectetus facilis</h3>
+                                <p class="textMainColumn">maurisque eros molest nunc anteget sed vel lacus mus semper. Anterd umnullam interdum eros dui urna</p>
+                                <!-- Блок для размещения ссылки для дольнейшего позиционирования в CSS -->
                             </div>
+                            <div class="readMore">
+                                <a href="">read more</a>
+                             </div>
                         </section>
                                                 
                         <section class="mainColumn">
@@ -142,33 +148,35 @@
                             <div class="imgColum">
                                 <p>60<br>x<br>60px</p>
                             </div>
-                            
-                            <h3 class="headingMainColumn">Indonectetus facilis</h3>
-                            <p class="textMainColumn">maurisque eros molest nunc anteget sed vel lacus mus semper. Anterd umnullam interdum eros dui urna</p>
-                            <!-- Блок для размещения ссылки для дольнейшего позиционирования в CSS -->
-                            <div class="readMore">
-                                <a href="">READ MORE »</a>
+                            <div class="columnComtent">
+                                <h3 class="headingMainColumn">Indonectetus facilis</h3>
+                                <p class="textMainColumn">maurisque eros molest nunc anteget sed vel lacus mus semper. Anterd umnullam interdum eros dui urna</p>
+                                <!-- Блок для размещения ссылки для дольнейшего позиционирования в CSS -->
                             </div>
+                            <div class="readMore">
+                                <a href="">read more</a>
+                             </div>
                         </section>
                     
                     
                     </section>
                     <!-- Содержимое правой колонки. В макете "Content/Left column/2" -->
                      <section class="rightColumn">
-                        <h4>LOREM IPSUM</h4>
+                        <h4>lorem ipsum</h4>
     
                         <section class="mainColumn">
                             <!-- Блоком задаётся изображение -->
                             <div class="imgColum">
                                 <p>60<br>x<br>60px</p>
                             </div>
-                            
-                            <h3 class="headingMainColumn">Indonectetus facilis</h3>
-                            <p class="textMainColumn">maurisque eros molest nunc anteget sed vel lacus mus semper. Anterd umnullam interdum eros dui urna</p>
-                            <!-- Блок для размещения ссылки для дольнейшего позиционирования в CSS -->
-                            <div class="readMore">
-                                <a href="">READ MORE »</a>
+                            <div class="columnComtent">
+                                <h3 class="headingMainColumn">Indonectetus facilis</h3>
+                                <p class="textMainColumn">maurisque eros molest nunc anteget sed vel lacus mus semper. Anterd umnullam interdum eros dui urna</p>
+                                <!-- Блок для размещения ссылки для дольнейшего позиционирования в CSS -->
                             </div>
+                            <div class="readMore">
+                                <a href="">read more</a>
+                             </div>
                         </section>
                       
                         <section class="mainColumn">
@@ -176,13 +184,14 @@
                             <div class="imgColum">
                                 <p>60<br>x<br>60px</p>
                             </div>
-                            
-                            <h3 class="headingMainColumn">Indonectetus facilis</h3>
-                            <p class="textMainColumn">maurisque eros molest nunc anteget sed vel lacus mus semper. Anterd umnullam interdum eros dui urna</p>
-                            <!-- Блок для размещения ссылки для дольнейшего позиционирования в CSS -->
-                            <div class="readMore">
-                                <a href="">READ MORE »</a>
+                            <div class="columnComtent">
+                                <h3 class="headingMainColumn">Indonectetus facilis</h3>
+                                <p class="textMainColumn">maurisque eros molest nunc anteget sed vel lacus mus semper. Anterd umnullam interdum eros dui urna</p>
+                                <!-- Блок для размещения ссылки для дольнейшего позиционирования в CSS -->
                             </div>
+                            <div class="readMore">
+                                <a href="">read more</a>
+                             </div>
                         </section>
                        
                         <section class="mainColumn">
@@ -190,13 +199,14 @@
                             <div class="imgColum">
                                 <p>60<br>x<br>60px</p>
                             </div>
-                            
-                            <h3 class="headingMainColumn">Indonectetus facilis</h3>
-                            <p class="textMainColumn">maurisque eros molest nunc anteget sed vel lacus mus semper. Anterd umnullam interdum eros dui urna</p>
-                            <!-- Блок для размещения ссылки для дольнейшего позиционирования в CSS -->
-                            <div class="readMore">
-                                <a href="">READ MORE »</a>
+                            <div class="columnComtent">
+                                <h3 class="headingMainColumn">Indonectetus facilis</h3>
+                                <p class="textMainColumn">maurisque eros molest nunc anteget sed vel lacus mus semper. Anterd umnullam interdum eros dui urna</p>
+                                <!-- Блок для размещения ссылки для дольнейшего позиционирования в CSS -->
                             </div>
+                            <div class="readMore">
+                                <a href="">read more</a>
+                             </div>
                         </section>
                     </section>
             
@@ -205,55 +215,52 @@
              <article class="tabs">
                  <!-- Содержимое самой менюшки. В макете "Content/Left column/Tabs/Nav" -->
                 <nav class="tabsMenu">
-                    <ul>
-                        <li><a href="">FINANCIAL WORLD</a></li>
-                        <li class="rightButton"><a href="">SPORT WORLD</a></li> 
-                        <li class="rightButton"><a href="">PROMI WORLD</a></li> 
-                        <li class="rightButton"><a href="">MUSIC & ARTS WORLD</a></li>  
-                    </ul>
+                    <div><a href="">financial world</a></div>
+                    <div class="centerButton"><a href="">sport world</a></div> 
+                    <div class="centerButton"><a href="">promi world</a></div> 
+                    <div class="rightButton"><a href="">music & arts world</a></div>  
                 </nav>
                 <!-- Cодержимое самих колонок. В макете "Content/Left column/Tabs/Info" -->
-                <section class="tabsColumn tabsColumnLeft">
-                    <a href="">Sed vel lacus mus semper.</a>
-                    <!-- Блоком задаётся изображение -->
-                    <div class="imgTabs">
-                        <p>122 x 80px</p>
-                    </div>
-                    <p class="textTabsColumn">Mariscque eros molest nunc anteget sed vel lacus mus semper. Antered umnullam interdum eros duiur.</p>
-                    <p class="tagName">Tag: <a href="">Tag Name »</a></p>
-                </section>
-
-                <section class="tabsColumn tabsColumnLeft">
-                    <a href="">Sed vel lacus mus semper.</a>
-                    <!-- Блоком задаётся изображение -->
-                    <div class="imgTabs">
-                        <p>122 x 80px</p>
-                    </div>
-                    <p class="textTabsColumn tabsColumnLeft">Mariscque eros molest nunc anteget sed vel lacus mus semper. Antered umnullam interdum eros duiur.</p>
-                    <p class="tagName">Tag: <a href="">Tag Name »</a></p>
-                </section>
-
-                <section class="tabsColumn tabsColumnLeft">
-                    <a href="">Sed vel lacus mus semper.</a>
-                    <!-- Блоком задаётся изображение -->
-                    <div class="imgTabs">
-                        <p>122 x 80px</p>
-                    </div>
-                    <p class="textTabsColumn">Mariscque eros molest nunc anteget sed vel lacus mus semper. Antered umnullam interdum eros duiur.</p>
-                    <p class="tagName">Tag: <a href="">Tag Name »</a></p>
-                </section>
-
-                <section class="tabsColumn">
-                    <a href="">Sed vel lacus mus semper.</a>
-                    <!-- Блоком задаётся изображение -->
-                    <div class="imgTabs">
-                        <p>122 x 80px</p>
-                    </div>
-                    <p class="textTabsColumn">Mariscque eros molest nunc anteget sed vel lacus mus semper. Antered umnullam interdum eros duiur.</p>
-                    <p class="tagName">Tag: <a href="">Tag Name »</a></p>
-                </section>
+                <article class="contentTabs">
+                    <section class="tabsColumn">
+                        <a href="">Sed vel lacus mus semper.</a>
+                        <!-- Блоком задаётся изображение -->
+                        <div class="imgTabs">
+                            <p>122 x 80px</p>
+                        </div>
+                        <p class="textTabsColumn">Mariscque eros molest nunc anteget sed vel lacus mus semper. Antered umnullam interdum eros duiur.</p>
+                        <p class="tagName">Tag: <a href="">Tag Name</a></p>
+                    </section>
+                    <section class="tabsColumn">
+                        <a href="">Sed vel lacus mus semper.</a>
+                        <!-- Блоком задаётся изображение -->
+                        <div class="imgTabs">
+                            <p>122 x 80px</p>
+                        </div>
+                        <p class="textTabsColumn">Mariscque eros molest nunc anteget sed vel lacus mus semper. Antered umnullam interdum eros duiur.</p>
+                        <p class="tagName">Tag: <a href="">Tag Name</a></p>
+                    </section>
+                    <section class="tabsColumn">
+                        <a href="">Sed vel lacus mus semper.</a>
+                        <!-- Блоком задаётся изображение -->
+                        <div class="imgTabs">
+                            <p>122 x 80px</p>
+                        </div>
+                        <p class="textTabsColumn">Mariscque eros molest nunc anteget sed vel lacus mus semper. Antered umnullam interdum eros duiur.</p>
+                        <p class="tagName">Tag: <a href="">Tag Name</a></p>
+                    </section>
+                    <section class="tabsColumn" id="rightTabs">
+                        <a href="">Sed vel lacus mus semper.</a>
+                        <!-- Блоком задаётся изображение -->
+                        <div class="imgTabs">
+                            <p>122 x 80px</p>
+                        </div>
+                        <p class="textTabsColumn">Mariscque eros molest nunc anteget sed vel lacus mus semper. Antered umnullam interdum eros duiur.</p>
+                        <p class="tagName">Tag: <a href="">Tag Name</a></p>
+                    </section>
+                </article>
           
-              </article>      
+            </article>      
             
             </article>
             <!-- Cодержимое правой половины основного контента. В макете "Content/Right column"  -->
@@ -264,7 +271,7 @@
                         Advertisement
                     </h2>
                     <!-- Блоком задаётся изображение -->
-                    <div class="advertisement">
+                    <div class="advertisementImage">
                         <p>160 x 600px</p>
                     </div>
                 </section>
@@ -275,42 +282,48 @@
                         <h2>
                             Categories
                         </h2>
-                        <a href="">» Lorem ipsum dolor</a><br>
-                        <a href="">» Suspedisse in neque</a><br>
-                        <a href="">» Praesent et eros</a><br>
-                        <a href="">» Lorem ipsum dolor</a><br>
-                        <a href="">» Suspendisse in neque</a><br>
-                        <a href="">» Praesent et eros</a><br>
-                        <a href="">» Praesent et eros</a><br>
-                        <a href="">» Lorem ipsum dolor</a><br>
-                        <a href="">» Suspendisse in neque</a><br>
+                        <ul>
+                            <li><a href="">Lorem ipsum dolor</a></li>
+                            <li><a href="">Suspedisse in neque</a></li>
+                            <li><a href="">Praesent et eros</a></li>
+                            <li><a href="">Lorem ipsum dolor</a></li>
+                            <li><a href="">Suspendisse in neque</a></li>
+                            <li><a href="">Praesent et eros</a></li>
+                            <li><a href="">Praesent et eros</a></li>
+                            <li><a href="">Lorem ipsum dolor</a></li>
+                            <li><a href="">Suspendisse in neque</a></li>
+                        </ul>
                     </div>
 
                     <div class="categories">
                         <h2>
                             Link Header
                         </h2>
-                        <a href="">» Lorem ipsum dolor</a><br>
-                        <a href="">» Suspedisse in neque</a><br>
-                        <a href="">» Praesent et eros</a><br>
-                        <a href="">» Lorem ipsum dolor</a><br>
-                        <a href="">» Suspendisse in neque</a><br>
-                        <a href="">» Praesent et eros</a><br>
-                        <a href="">» Praesent et eros</a><br>
-                        <a href="">» Lorem ipsum dolor</a><br>
-                        <a href="">» Suspendisse in neque</a><br>
+                        <ul>
+                            <li><a href="">Lorem ipsum dolor</a></li>
+                            <li><a href="">Suspedisse in neque</a></li>
+                            <li><a href="">Praesent et eros</a></li>
+                            <li><a href="">Lorem ipsum dolor</a></li>
+                            <li><a href="">Suspendisse in neque</a></li>
+                            <li><a href="">Praesent et eros</a></li>
+                            <li><a href="">Praesent et eros</a></li>
+                            <li><a href="">Lorem ipsum dolor</a></li>
+                            <li><a href="">Suspendisse in neque</a></li>
+                        </ul>
                     </div>
 
                     <div class="categories">
                         <h2>
                             Link Header
                         </h2>
-                        <a href="">» Lorem ipsum dolor</a><br>
-                        <a href="">» Suspedisse in neque</a><br>
-                        <a href="">» Praesent et eros</a><br>
-                        <a href="">» Lorem ipsum dolor</a><br>
-                        <a href="">» Suspendisse in neque</a><br>
-                        <a href="">» Praesent et eros</a><br>
+                        <ul>
+                            <li><a href="">Lorem ipsum dolor</a></li>
+                            <li><a href="">Suspedisse in neque</a></li>
+                            <li><a href="">Praesent et eros</a></li>
+                            <li><a href="">Lorem ipsum dolor</a></li>
+                            <li><a href="">Suspendisse in neque</a></li>
+                            <li><a href="">Praesent et eros</a></li>
+                        </ul>
                     </div>
                 </section>
             </article>
@@ -384,12 +397,11 @@
         </article>
         <!-- Содержимое копирайта. В макете "Copiright" -->
         <div class="copiright">
-            <!-- Размещение в блоки для дальнейшкго позиционирования в CSS -->
-            <div class="domainName">
+
+            <div>
                 <p>Copiright © 2013 Domane Name - All Rights Reserved</p>
             </div>
-            <!-- Размещение в блоки для дальнейшкго позиционирования в CSS -->
-            <div class="templaneName">
+            <div>
                 <p>Template by OS Templates</p>
             </div>
         </div>
