@@ -76,11 +76,13 @@ nav, article, section{
 /* Свойства иконок в верхнем правом углу подвижного меню  */
 .ellipse{
   border:8px solid #ffffff;
-  width:28px;
-  height:28px;
+  width:20px;
+  height:20px;
   border-radius:100%;
   background-color:#ffffff;
   margin-left:8px;
+}
+.ellipse a{
   color:#ffffff ;
 }
 
@@ -154,7 +156,6 @@ article.mainArticles {
   line-height:36px;
   color:#ffffff;
   padding:145px;
-  
 }
 .topNews {
   font-size:22px;
