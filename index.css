@@ -47,7 +47,7 @@ nav, article, section{
   content:"» ";
 }
 /* Свойства верхнего подвижного меню */
-nav.topMenu {
+.topMenu {
   height:52px;
   width:960px;
   background-color:#2D2928;
@@ -55,7 +55,7 @@ nav.topMenu {
   z-index:4;/* Индекс для отображения над другими позиционированными элементами*/
   justify-content:space-between;
 }
-nav.topMenu div {
+.topMenu div {
   align-self:center;
 }
 /* Созздание в верхней левом углу меню разделительной линии */
@@ -63,21 +63,21 @@ nav.topMenu div {
     border-left:1px solid #c4c4c4;
     padding-left:5px;
   }
-  div.buttonTopMenu a:link,div.buttonTopMenu a:visited {
+  .buttonTopMenu a:link,.buttonTopMenu a:visited {
     font-size:12px;
     line-height:14px; 
     color:#c4c4c4;
     padding-right:2px;
   }
-  div.buttonTopMenu a:hover,div.buttonTopMenu a:active  {
+  .buttonTopMenu a:hover,.buttonTopMenu a:active  {
     text-decoration:underline;
   }
 
 /* Свойства иконок в верхнем правом углу подвижного меню  */
-a.ellipse{
-  border:6px solid #ffffff;
-  width:32px;
-  height:32px;
+.ellipse{
+  border:8px solid #ffffff;
+  width:28px;
+  height:28px;
   border-radius:100%;
   background-color:#ffffff;
   margin-left:8px;
@@ -85,11 +85,11 @@ a.ellipse{
 }
 
 /* Свойства логотипа */
-div.logo {
+.logo {
   height:185px;
   padding-top:52px;
 }
-  div.logo h1 {
+.logo h1 {
   font-size:100px;
   line-height:120px;
   color:#282828;
@@ -97,7 +97,7 @@ div.logo {
   font-weight:normal;
   padding:10px 0;
   } 
-  div.logo p {
+.logo p {
     font-size:20px;
     line-height:24px;
     color:#4a4a4a;
@@ -105,23 +105,23 @@ div.logo {
   }
  
 /* Свойства ТопМеню */
-nav.topNavigation {
+.topNavigation {
    height:35px;
    border-top:3px double #999999;
    border-bottom:3px double #999999;
    flex-wrap:wrap;
    align-content:center;
 }
- nav.topNavigation li{
+ .topNavigation li{
    padding-right:36px;
  }
- nav.topNavigation a:link,nav.topNavigation a:visited {
+ .topNavigation a:link,.topNavigation a:visited {
   font-size:14px;
   line-height:14px;
   color:#333333;
   text-decoration:none;
  }
- nav.topNavigation a:hover,nav.topNavigation a:active  {
+ .topNavigation a:hover,.topNavigation a:active  {
   color:#999999;
 }
  
@@ -138,33 +138,33 @@ article.mainArticles {
 }
 
 /* сойства ТопНовости */
-section.topArticles {
+.topArticles {
   flex-direction:column;
   margin-right:30px;
 }
-div.imgTopArticles {
+.imgTopArticles {
   height:320px; 
   width:500px;
   background-color:#333333;
   flex-shrink:0;
   margin-bottom:20px;
 }
-div.imgTopArticles p {
+.imgTopArticles p {
   font-size:36px;
   line-height:36px;
   color:#ffffff;
   padding:145px;
   
 }
-a.topNews {
+.topNews {
   font-size:22px;
   line-height:22px;
   color:#444444;
 }
-a.topNews:hover{
+.topNews:hover{
   color:#999999;
 }
-p.textTopNews  {
+.textTopNews  {
   width:497px;
   height:99px;
   font-size:16px;
@@ -174,42 +174,41 @@ p.textTopNews  {
 }
 
 /* Свойства колонок справа от ТопНовости */
-article.burgerMainArticles {
+.burgerMainArticles {
   flex-direction:column;
   justify-content:space-between;
 }
-section.mainArticles:not([id="endColumn"]) {
+.mainArticles:not([id="endColumn"]) {
   margin-bottom:20px;
 }
-div.imgMainArticles {
+.imgMainArticles {
   height:100px; 
   width:100px;
   background-color:#333333 ;
-  float:left;/* Размещение изображения слева от текста*/
   border:5px double #e0e0e0;
   flex-shrink:0;
   margin-right:10px;
 }
-div.imgMainArticles p {
+.imgMainArticles p {
   font-size:15px;
   line-height:15px;
   color:#ffffff;
   padding:40px 8px;
 }
 /* свойства статьи без изображения */
-section.mainArticlesNoImg {
+.mainArticlesNoImg {
   flex-direction:column;
   margin-bottom:20px;
 }
-a.mainNewsNoImg {
+.mainNewsNoImg {
   font-size:22px;
   line-height:22px;
   color:#444444;
 }
-a.mainNewsNoImg:hover{
+.mainNewsNoImg:hover{
   color:#999999;
 }
-p.textMainNewsNoImg {
+.textMainNewsNoImg {
   height:65px;
   font-size:16px;
   line-height:19px;
@@ -217,18 +216,18 @@ p.textMainNewsNoImg {
   padding-top:10px;
 }
 /* Свойства статей с изображением */
-div.mainNews {
+.mainNews {
   padding:10px 0;
 }
-div.mainNews a {
+.mainNews a {
   font-size:22px;
   line-height:22px;
   color:#444444;
 }
-div.mainNews a:hover{
+.mainNews a:hover{
   color:#999999;
 }
-p.textMainNews {
+.textMainNews {
   height:66px;
   font-size:16px;
   line-height:19px;
@@ -238,32 +237,30 @@ p.textMainNews {
 
 
 /* Свойства основного контента */
-article.content {
+.content {
   border-bottom:3px double  #999999;
   justify-content:space-between;
 }
-article.mainContent {
+.mainContent {
   width:600px;
   flex-direction:column;
  margin-right:30px;
 }
 /* Свойства верхней левой половины контента */
-article.column{                                                                
+.column{                                                                
   padding:30px 0;
   border-bottom:2px double #999999;
   justify-content:space-between;
 }
-section.mainColumn {
-  height:80px;
+.mainColumn {
   width:290px; 
   padding-top:5px;
   margin-top:10px;
-  position:relative;
 }
-section.rightColumn, section.leftColumn{
+.rightColumn,.leftColumn{
   flex-direction:column;
 }
-article.mainContent h4 {
+.mainContent h4 {
   font-size:16px;
   line-height:16px;
   color:#666666;
@@ -271,7 +268,7 @@ article.mainContent h4 {
   border-bottom:1px solid #666666;
   padding-bottom:10px;
 }
-div.imgColum {
+.imgColum {
   width:60px;
   height:60px;
   background-color:#333333;
@@ -279,7 +276,7 @@ div.imgColum {
   margin-right:8px;
   flex-shrink:0;
 }
-div.imgColum p {
+.imgColum p {
   font-size:16px;
   line-height:16px;
   color:#ffffff;
@@ -287,49 +284,46 @@ div.imgColum p {
   margin:auto;
   padding-top:5px;
 }
-  h3.headingMainColumn {
+.headingMainColumn {
   font-size:12px;
   line-height:12px;
   color:#444444;
   padding:5px 0;
 }
- p.textMainColumn {
+.textMainColumn {
   width:210px;
   height:46px;
   font-size:12px;
   line-height:14px;
   color:#666666;
 }
-div.readMore {
- position:absolute;
- top:65px;
- right:0;
- width:80px;
- height:20px;
+.readMore {
+  display:flex; 
+ justify-content: flex-end;
 }
-div.readMore a{
+.readMore a{
   font-size:11px;
   line-height:11px;
 }
-div.readMore a:link, div.readMore a:visited {
+.readMore a:link,.readMore a:visited {
   color:#982115;
 }
-div.readMore a:hover, div.readMore a:active {
+.readMore a:hover,.readMore a:active {
   color:#3b2320;
 }
 /* Свойства правой нижней половины контента */
-article.tabs {
+.tabs {
   padding:25px 0;
 }
 /* Свойства менюшки */
-article.tabs {
+.tabs {
 flex-direction:column;
 }
-nav.tabsMenu {
+.tabsMenu {
 height:35px;
 width:600px;
 }
-nav.tabsMenu div {
+.tabsMenu div {
   height:100%;
   font-size:12px;
   line-height:14px;
@@ -341,46 +335,46 @@ nav.tabsMenu div {
   align-content:center;
   padding:0 10px;
 } 
-div.rightButton {
+.rightButton {
   flex-grow:1;
 }
-nav.tabsMenu div a:link, nav.tabsMenu div a:visited {
+.tabsMenu div a:link,.tabsMenu div a:visited {
   color: #ffffff;
   text-decoration: none;
 }
-nav.tabsMenu div a:hover, nav.tabsMenu div a:active{
+.tabsMenu div a:hover,.tabsMenu div a:active{
   color: #c0c0c0;
 }
 /* Свойства колонок */
-article.contentTabs {
+.contentTabs {
   justify-content:space-between;
   padding-top:20px;
 }
-section.tabsColumn {
+.tabsColumn {
   flex-direction:column;
   height:240px;
 }
-section.tabsColumn:not([id="rightTabs"]){
+.tabsColumn:not([id="rightTabs"]){
  margin-right:24px;
 }
-section.tabsColumn a:link, section.tabsColumn a:visited {
+.tabsColumn a:link,.tabsColumn a:visited {
   font-size:12px;
   line-height:14px;
   color:#982115;
   font-weight:bold;
 }
-section.tabsColumn a:hover, section.tabsColumn a:active {
+.tabsColumn a:hover,.tabsColumn a:active {
   color:#250401;
 }
-p.tagName a:link, p.tagName a:visited{
+.tagName a:link,.tagName a:visited{
   color:#982115;
   font-weight:normal;
 }
-p.tagName a:hover, p.tagName a:active{
+.tagName a:hover,.tagName a:active{
   color:  #250401;
   text-decoration:underline;
 }
-div.imgTabs {
+.imgTabs {
   height:80px;
   width:122px;
   background-color:#333333;
@@ -388,14 +382,14 @@ div.imgTabs {
   flex-shrink:0;
   margin:15px 0 10px;
 }
-div.imgTabs p{
+.imgTabs p{
   font-size:16px;
   line-height:16px;
   color:#ffffff;
   text-align:center;
   padding-top:33px;
 }
-p.textTabsColumn, p.tagName {
+.textTabsColumn,.tagName {
   width:131px;
   height:67px;
   font-size:12px;
@@ -404,27 +398,27 @@ p.textTabsColumn, p.tagName {
   padding-bottom:10px;
 }
 /* Свойства правой половины контента */
-article.asideContent {
+.asideContent {
   padding-top:30px;
 }
 /* Свойства блока места под рекламу */
-section.advertisement {
+.advertisement {
   flex-direction:column;
   margin-right:20px;
 }
-article.asideContent h2 {
+.asideContent h2 {
   font-size:13px;
   line-height:13px;
   color:#666666;
   border-top:5px solid #999999;
   padding:7px 0 18px;
 }
-div.advertisementImage {
+.advertisementImage {
   height:600px;
   width:160px;
   background-color:#333333 ;
 }
-div.advertisementImage p{
+.advertisementImage p{
   font-size:16px;
   line-height:16px;
   color:#ffffff;
@@ -432,70 +426,70 @@ div.advertisementImage p{
   padding-top:292px;
 }
 /* Свойства колонок с ссылками */
-section.linkColumn {
+.linkColumn {
   flex-direction:column;
 }
-div.categories {
+.categories {
   margin-bottom:10px;
 }
-div.categories h2{
+.categories h2{
   padding-bottom:15px;
 }
-section.linkColumn li {
+.linkColumn li {
   padding-bottom:1px;
 }
-section.linkColumn a {
+.linkColumn a {
   font-size:13px;
   line-height:13px;
   color:#982216; 
 }
-section.linkColumn a:hover, section.linkColumn a:active {
+.linkColumn a:hover,.linkColumn a:active {
   color:#3a3635;
   text-decoration:underline;
 }
 /* Свойства футера */
-article.lowerColumn {
+.lowerColumn {
   border-bottom:3px double #999999;
 }
-article.lowerColumn section{
+.lowerColumn section{
   width:180px;
   flex-direction:column;
   justify-content:space-between;
   padding-bottom:35px;
 }
-section.leftColumnFotter {
+.leftColumnFotter {
   margin-right:16px;
 }
-article.lowerColumn h2 {
+.lowerColumn h2 {
   font-size:13px;
   line-height:13px;
   color:#666666;
   border-bottom:1px solid #bcbcbc;
   padding-bottom:9px;
 }
-article.lowerColumn ul{
+.lowerColumn ul{
   padding-top:9px;
 }
-article.lowerColumn a{
+.lowerColumn a{
   font-size:12px;
   line-height:19px;
   color:#982216;
   font-family:"Verdana";
 }
-article.lowerColumn a:hover, article.lowerColumn a:active{
+.lowerColumn a:hover,.lowerColumn a:active{
   color:#3a3635;
   text-decoration:underline;
 }
 /* свойства копирайта */
-div.copiright {
+.copiright {
   display:flex;
   justify-content:space-between;
 }
-div.copiright p {
+.copiright p {
  font-size:12px;
  line-height:12px;
  color:#787878;
 }
-div.copiright div {
+.copiright div {
  margin:36px 0;
 }
